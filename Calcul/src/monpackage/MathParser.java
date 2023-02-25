@@ -144,19 +144,7 @@ public class MathParser extends Correction {
                    
         }
          
-        //Si la pile n'est pas vide, la dépiler vers la sortie
-        while(stack.size() > 0)
-        {
-            if(leftBracket.equals(stack.getLast()))
-            {
-                //Si une paranthèse gauche est trouvée, il y a un mauvais paranthèsage
-                System.out.println("ERROR : Unbalanced expression");
-                return new LinkedList<>();
-            }
-             
-            outputList.add(stack.removeLast());
-        }
-      
+        
        
 
         return outputList;
